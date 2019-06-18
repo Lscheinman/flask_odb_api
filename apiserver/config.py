@@ -1,0 +1,9 @@
+SERVER_NAME = 'localhost:8000'
+SECRET_KEY = 'a good secure key for signing certificates
+MAIL_USERNAME = 'an email you can use to confirm users'
+MAIL_PASSWORD = 'the password for the account'
+COPILOT_URL = 'https://api.cai.tools.sap/auth/v1/owners/YOURUSER'
+COPILOT_AUTH = 'YOUR AUTH'
+COPILOT_DEV_TOKEN = 'YOUR TOKEN
+ODB_USER ='USUALLY root'
+ODB_PSWD = 'USUALLY admin'
