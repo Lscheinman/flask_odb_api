@@ -2,7 +2,8 @@ import time, string, random, socket, pyorient
 import click
 from datetime import datetime
 from dateutil.parser import parse
-from apiserver.config import SERVER_NAME, SECRET_KEY, MAIL_PASSWORD, MAIL_USERNAME, COPILOT_DEV_TOKEN, COPILOT_AUTH, COPILOT_URL
+from apiserver.config import SERVER_NAME, SECRET_KEY, MAIL_PASSWORD, MAIL_USERNAME, COPILOT_DEV_TOKEN,\
+    COPILOT_AUTH, COPILOT_URL, ODB_PSWD, ODB_USER
 
 
 SERVER_NAME = SERVER_NAME
@@ -11,6 +12,8 @@ SIGNATURE_EXPIRED = 'Signature expired'
 BLACK_LISTED = 'Blacklisted token'
 DB_ERROR = "Database error"
 PROTECTED = ["password"]
+ODB_PSWD = ODB_PSWD
+ODB_USER = ODB_USER
 
 # mail settings
 MAIL_SERVER = 'smtp.googlemail.com'
@@ -100,26 +103,31 @@ def randomString(stringLength=15):
     return ''.join(random.choice(letters) for i in range(stringLength))
 
 
-def get_host(user, pswd):
-    click.echo('[OrientModel_init__%s] Pausing to allow ODB setup' % (get_datetime()))
-    time.sleep(20)
-    click.echo('[OrientModel_init__%s] Complete to allow ODB setup' % (get_datetime()))
-    possible_hosts = socket.gethostbyname_ex(socket.gethostname())[-1]
-    if len(possible_hosts) > 0:
-        hostname = possible_hosts[0][:possible_hosts[0].rfind('.')]
-        i = 2
-        possible_hosts = ["localhost"]
-        while i < 6:
-            possible_hosts.append("%s.%d" % (hostname, i))
-            i += 1
-    for h in possible_hosts:
+def get_host(**kwargs):
+    possible_hosts = ["localhost"]
+    possible_hosts.append(socket.gethostbyname_ex(socket.gethostname())[-1])
+    if kwargs:
+        click.echo('[%s_init__%s] Pausing to allow ODB setup' % (kwargs['db_name'], get_datetime()))
+        time.sleep(1)
+        click.echo('[%s_init__%s] Complete to allow ODB setup' % (kwargs['db_name'], get_datetime()))
+        if len(possible_hosts) > 0:
+            hostname = possible_hosts[0][:possible_hosts[0].rfind('.')]
+            i = 2
 
-        client = pyorient.OrientDB("%s" % h, 2424)
-        try:
-            session_id = client.connect(user, pswd)
-            click.echo('[OrientModel_init__%s] successfully connected to %s' % (get_datetime(), h))
-            return {"client": client, "session_id": session_id}
-        except Exception as e:
-            click.echo('[OrientModel_init__%s] %s failed\n%s' % (get_datetime(), h, str(e)))
+            while i < 6:
+                possible_hosts.append("%s.%d" % (hostname, i))
+                i += 1
+        for h in possible_hosts:
+            click.echo('[%s_init__%s] attempting connection to %s' % (kwargs['db_name'], get_datetime(), h))
+            client = pyorient.OrientDB("%s" % h, 2424)
+            try:
+                session_id = client.connect(kwargs['user'], kwargs['pswd'])
+                click.echo('[%s_init__%s] successfully connected to %s' % (kwargs['db_name'], get_datetime(), h))
+                return {"client": client, "session_id": session_id}
+            except Exception as e:
+                click.echo('[%s_init__%s] %s failed\n%s' % (kwargs['db_name'], get_datetime(), h, str(e)))
 
-    return {"client": None, "session_id": None}
+        return {"client": None, "session_id": None}
+
+    else:
+        print(possible_hosts)

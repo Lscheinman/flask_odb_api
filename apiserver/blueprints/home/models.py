@@ -1,7 +1,7 @@
 import pyorient
 import json, random
 import click
-from apiserver.utils import get_datetime, clean, clean_concat, change_if_date, get_host
+from apiserver.utils import get_datetime, clean, clean_concat, change_if_date, get_host, ODB_USER, ODB_PSWD
 import pandas as pd
 import numpy as np
 import os
@@ -12,10 +12,10 @@ class ODB():
 
     def __init__(self, db_name="GratefulDeadConcerts"):
 
-        self.client = pyorient.OrientDB("localhost", 2424)
-        self.user = 'root'
-        self.pswd = 'admin'
         self.db_name = db_name
+        self.user = ODB_USER
+        self.pswd = ODB_PSWD
+        self.client = get_host(user=self.user, pswd=self.pswd, db_name=self.db_name)['client']
         self.path = os.getcwd()
         self.data = os.path.join(self.path, "data")
         self.models = {
