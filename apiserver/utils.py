@@ -104,7 +104,7 @@ def randomString(stringLength=15):
 
 
 def get_host(**kwargs):
-    possible_hosts = ["localhost"]
+    possible_hosts = ["localhost", "0.0.0.0"]
     possible_hosts.append(socket.gethostbyname_ex(socket.gethostname())[-1])
     if kwargs:
         click.echo('[%s_init__%s] Pausing to allow ODB setup' % (kwargs['db_name'], get_datetime()))
