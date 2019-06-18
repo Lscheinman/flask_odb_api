@@ -1,0 +1,414 @@
+{
+	"nodes": [
+		{
+			"key": 0,
+			"title": "Cecilia Elsner",
+			"group": 1,
+			"status": "Error",
+			"icon": "sap-icon://person-placeholder",
+			"attributes": [
+				{
+					"label": "Gender",
+					"value": "F"
+				},{
+					"label": "className",
+					"value": "Person"
+				}
+			]
+		},{
+			"key": 1,
+			"title": "Rosamund Elsner",
+			"group": 1,
+			"icon": "sap-icon://person-placeholder",
+			"attributes": [
+				{
+					"label": "Gender",
+					"value": "F"
+				},{
+					"label": "className",
+					"value": "Person"
+				}
+			]
+		},{
+			"key": 2,
+			"title": "Jumana Gyulai",
+			"group": 2,
+			"icon": "sap-icon://person-placeholder",
+			"attributes": [
+				{
+					"label": "Gender",
+					"value": "Male"
+				},{
+					"label": "className",
+					"value": "Person"
+				}
+			]
+		},{
+			"key": 3,
+			"title": "Health",
+			"group": 1,
+			"status": "Warning",
+			"icon": "sap-icon://accidental-leave",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/19/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/19/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 4,
+			"title": "Abuse",
+			"group": 1,
+			"status": "Error",
+			"icon": "sap-icon://wounds-doc",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/20/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/20/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 5,
+			"title": "Employment",
+			"group": 1,
+			"status": "Warning",
+			"icon": "sap-icon://sys-help",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/21/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/21/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 6,
+			"title": "Social Assessment",
+			"group": 2,
+			"status": "Success",
+			"icon": "sap-icon://learning-assistant",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/22/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/22/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 7,
+			"title": "Abuse",
+			"group": 2,
+			"status": "Warning",
+			"icon": "sap-icon://wounds-doc",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/23/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/23/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 8,
+			"title": "Employment",
+			"group": 2,
+			"status": "Success",
+			"icon": "sap-icon://my-sales-order",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/24/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/24/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 9,
+			"title": "Employment",
+			"group": 3,
+			"icon": "sap-icon://my-sales-order",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/25/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/25/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 10,
+			"title": "Health",
+			"group": 2,
+			"status": "Error",
+			"icon": "sap-icon://accidental-leave",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/26/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/26/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 11,
+			"title": "Health",
+			"group": 3,
+			"icon": "sap-icon://accidental-leave",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/27/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/27/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 12,
+			"title": "Alcohol crime",
+			"group": 3,
+			"status": "Warning",
+			"icon": "sap-icon://badge",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/27/2019/15:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/27/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 13,
+			"title": "Şahin Kurita",
+			"group": 2,
+			"icon": "sap-icon://person-placeholder",
+			"attributes": [
+				{
+					"label": "Gender",
+					"value": "M"
+				},{
+					"label": "className",
+					"value": "Person"
+				}
+			]
+		},{
+			"key": 14,
+			"title": "Education",
+			"group": 3,
+			"status": "Success",
+			"icon": "sap-icon://study-leave",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/29/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/29/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 15,
+			"title": "Abily Auerswald",
+			"group": 2,
+			"icon": "sap-icon://person-placeholder",
+			"attributes": [
+				{
+					"label": "Release date",
+					"value": "August 1, 2014"
+				},{
+					"label": "className",
+					"value": "Person"
+				}
+			]
+		},{
+			"key": 16,
+			"title": "Education",
+			"group": 3,
+			"icon": "sap-icon://tree",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/30/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/30/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 17,
+			"title": "Education",
+			"group": 3,
+			"icon": "sap-icon://study-leave",
+			"status": "Warning",
+			"statusIcon": "sap-icon://accelerated",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/31/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/31/2019/17:0:0"
+				}
+			]
+		},{
+			"key": 18,
+			"title": "Education",
+			"icon": "sap-icon://study-leave",
+			"status": "Error",
+			"group": 3,
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/18/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/18/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 19,
+			"title": "Jasper Eskelinen",
+			"group": 3,
+			"icon": "sap-icon://person-placeholder",
+			"attributes": [
+				{
+					"label": "Release date",
+					"value": "May 3, 2019"
+				},{
+					"label": "className",
+					"value": "Person"
+				}
+			]
+		},{
+			"key": 20,
+			"title": "Health Emergency",
+			"group": 3,
+			"status": "Error",
+			"icon": "sap-icon://accidental-leave",
+			"attributes": [
+				{
+					"label": "startDate",
+					"value": "05/18/2019/16:0:0"
+				},{
+					"label": "endDate",
+					"value": "05/18/2019/17:0:0"
+				},{
+					"label": "className",
+					"value": "Event"
+				}
+			]
+		},{
+			"key": 21,
+			"title": "Manchester, England",
+			"icon": "sap-icon://map",
+			"group": 1,
+			"tooltip": "City",
+			"attributes": [
+				{
+					"label": "Type",
+					"value": "City"
+				},{
+					"label": "Population",
+					"value": 500000
+				},{
+					"label": "className",
+					"value": "Location"
+				},{
+					"label": "Latitude",
+					"value": "53.483959"
+				},{
+					"label": "Longitude",
+					"value": "-2.244644"
+				}
+			]
+		}
+	],
+	"lines": [
+		{"from": 0, "to": 5, "description": "Involved", "title": "Event"},
+		{"from": 1, "to": 5, "description": "Involved", "title": "Event"},
+		{"from": 2, "to": 5, "description": "Involved", "title": "Event"},
+		{"from": 3, "to": 5, "description": "Related"},
+		{"from": 4, "to": 5, "description": "Related"},
+		{"from": 5, "to": 6, "description": "Related"},
+		{"from": 5, "to": 7, "description": "Related"},
+		{"from": 5, "to": 8, "description": "Related"},
+		{"from": 6, "to": 10, "description": "Related"},
+		{"from": 7, "to": 10, "description": "Related"},
+		{"from": 8, "to": 10, "description": "Friend", "title": "Friend"},
+		{"from": 9, "to": 12, "description": "Related"},
+		{"from": 10, "to": 12, "description": "Related"},
+		{"from": 10, "to": 13, "description": "Involved", "title": "Event"},
+		{"from": 13, "to": 11, "description": "Involved", "title": "Event"},
+		{"from": 10, "to": 14, "description": "Involved"},
+		{"from": 13, "to": 14, "description": "Involved", "title": "Event"},
+		{"from": 14, "to": 16, "description": "Friend"},
+		{"from": 14, "to": 17, "description": "Friend"},
+		{"from": 12, "to": 20, "description": "Involved"},
+		{"from": 16, "to": 20, "description": "Involved"},
+		{"from": 17, "to": 20, "description": "Involved"},
+		{"from": 15, "to": 18, "description": "Involved", "title": "Event"},
+		{"from": 18, "to": 20, "description": "OccurredAt", "title": "Event"},
+		{"from": 5, "to": 19, "description": "OccurredAt", "title": "Event"},
+		{"from": 10, "to": 19, "description": "OccurredAt", "title": "Event"},
+		{"from": 20, "to": 19, "description": "OccurredAt", "title": "Event"},
+		{"from": 21, "to": 10, "description": "OccurredAt", "title": "Event"}
+	],
+	"groups": [
+		{"key": 1, "title": "Phase One"},
+		{"key": 2, "title": "Phase Two"},
+		{"key": 3, "title": "Phase Three"}
+	]
+}
